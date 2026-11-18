@@ -1,0 +1,972 @@
+{
+  "updatedAt": "2026-11-13T23:26:30.725Z",
+  "projects": [
+    {
+      "id": "PRJ-1794612333974-FK1R",
+      "title": "Numeros inteiros",
+      "discipline": "Matemática",
+      "gradeLevel": "8º ano",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-11-13T23:25:33.974Z",
+      "updatedAt": "2026-11-13T23:26:30.724Z",
+      "materials": [
+        {
+          "id": "MAT-1794612381536-GQOT",
+          "title": "Matemática: ADIÇÃO DE NÚMEROS INTEIROS (7º ano do Ensino Fundamental)",
+          "discipline": "Matemática",
+          "gradeLevel": "7º ano do Ensino Fundamental",
+          "workflowMode": "Professor",
+          "productionMode": "SINTESE_LOCAL_OFFLINE",
+          "createdAt": "2026-11-13T23:26:21.536Z",
+          "updatedAt": "2026-11-13T23:26:30.724Z",
+          "originalGeneratedMaterial": {
+            "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+            "title": "Matemática: ADIÇÃO DE NÚMEROS INTEIROS (7º ano do Ensino Fundamental)",
+            "printOptimized": true,
+            "blocks": [
+              {
+                "id": "blk-identificacao",
+                "sectionType": "identificacao",
+                "title": "1. Identificação",
+                "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 50 minutos (1 aula padrão)\n**Tema:** ADIÇÃO DE NÚMEROS INTEIROS"
+              },
+              {
+                "id": "blk-objetivos",
+                "sectionType": "objetivos",
+                "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de ADIÇÃO DE NÚMEROS INTEIROS.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a ADIÇÃO DE NÚMEROS INTEIROS.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+              },
+              {
+                "id": "blk-problematizacao",
+                "sectionType": "problematizacao",
+                "title": "3. Contextualização e Problematização",
+                "body": "Situação disparadora sobre **ADIÇÃO DE NÚMEROS INTEIROS**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+              },
+              {
+                "id": "blk-desenvolvimento",
+                "sectionType": "desenvolvimento_conceitual",
+                "title": "4. Desenvolvimento Conceitual e Representações",
+                "body": "Desenvolvimento conceitual de **ADIÇÃO DE NÚMEROS INTEIROS** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+              },
+              {
+                "id": "blk-visual",
+                "sectionType": "representacao_visual",
+                "title": "5. Representação Visual Pedagógica",
+                "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                "latex": ""
+              },
+              {
+                "id": "blk-exemplos",
+                "sectionType": "exemplos_resolvidos",
+                "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                "body": "**Exemplo Guiado sobre ADIÇÃO DE NÚMEROS INTEIROS:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+              },
+              {
+                "id": "blk-atividades",
+                "sectionType": "atividades_graduadas",
+                "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo ADIÇÃO DE NÚMEROS INTEIROS.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de ADIÇÃO DE NÚMEROS INTEIROS para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+              },
+              {
+                "id": "blk-avaliacao",
+                "sectionType": "avaliacao_formativa",
+                "title": "8. Sistematização e Avaliação Formativa",
+                "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+              },
+              {
+                "id": "blk-referencias",
+                "sectionType": "referencias",
+                "title": "9. Referências e Limitações Documentais",
+                "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+              }
+            ]
+          },
+          "currentMaterial": {
+            "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+            "title": "Matemática: ADIÇÃO DE NÚMEROS INTEIROS (7º ano do Ensino Fundamental)",
+            "printOptimized": true,
+            "blocks": [
+              {
+                "id": "blk-identificacao",
+                "sectionType": "identificacao",
+                "title": "1. Identificação",
+                "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 50 minutos (1 aula padrão)\n**Tema:** ADIÇÃO DE NÚMEROS INTEIROS"
+              },
+              {
+                "id": "blk-objetivos",
+                "sectionType": "objetivos",
+                "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de ADIÇÃO DE NÚMEROS INTEIROS.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a ADIÇÃO DE NÚMEROS INTEIROS.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+              },
+              {
+                "id": "blk-problematizacao",
+                "sectionType": "problematizacao",
+                "title": "3. Contextualização e Problematização",
+                "body": "Situação disparadora sobre **ADIÇÃO DE NÚMEROS INTEIROS**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+              },
+              {
+                "id": "blk-desenvolvimento",
+                "sectionType": "desenvolvimento_conceitual",
+                "title": "4. Desenvolvimento Conceitual e Representações",
+                "body": "Desenvolvimento conceitual de **ADIÇÃO DE NÚMEROS INTEIROS** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+              },
+              {
+                "id": "blk-visual",
+                "sectionType": "representacao_visual",
+                "title": "5. Representação Visual Pedagógica",
+                "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                "latex": ""
+              },
+              {
+                "id": "blk-exemplos",
+                "sectionType": "exemplos_resolvidos",
+                "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                "body": "**Exemplo Guiado sobre ADIÇÃO DE NÚMEROS INTEIROS:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+              },
+              {
+                "id": "blk-atividades",
+                "sectionType": "atividades_graduadas",
+                "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo ADIÇÃO DE NÚMEROS INTEIROS.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de ADIÇÃO DE NÚMEROS INTEIROS para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+              },
+              {
+                "id": "blk-avaliacao",
+                "sectionType": "avaliacao_formativa",
+                "title": "8. Sistematização e Avaliação Formativa",
+                "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+              },
+              {
+                "id": "blk-referencias",
+                "sectionType": "referencias",
+                "title": "9. Referências e Limitações Documentais",
+                "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+              }
+            ]
+          },
+          "audit": {
+            "moduleRef": "M05 Auditoria de Qualidade (v2.1 CANDIDATA REV5)",
+            "auditedAt": "2026-11-13T23:26:21.516Z",
+            "categoriesCovered": [
+              "Científica",
+              "Conceitual",
+              "Histórica",
+              "Normativa",
+              "Pedagógica",
+              "Didática",
+              "Matemática",
+              "Documental",
+              "Editorial",
+              "Acessibilidade"
+            ],
+            "status": "APROVADO_COM_RESSALVAS",
+            "hardFails": [],
+            "softWarnings": [
+              {
+                "category": "Documental",
+                "location": "9. Referências e Limitações Documentais",
+                "problem": "2 referência(s) não possuem acesso \"Integral\" (Metadados, Referência localizada).",
+                "recommendedFix": "Manter o nível de acesso declarado e verificar fontes primárias antes de publicação final."
+              }
+            ],
+            "autoApprovalBlocked": false
+          },
+          "scientific": {
+            "moduleRef": "M01 Base Científica (v2.3.3 CANDIDATA REV6 / v2.3.2 REV5)",
+            "discipline": "Matemática",
+            "topic": "ADIÇÃO DE NÚMEROS INTEIROS",
+            "references": [
+              {
+                "author": "BRASIL. Ministério da Educação",
+                "title": "Base Nacional Comum Curricular (BNCC) — Matemática",
+                "year": "2018",
+                "publication": "MEC",
+                "doiOrIsbn": "",
+                "url": "",
+                "sourceType": "Documento normativo oficial",
+                "evidenceType": "Normativa",
+                "accessState": "Metadados",
+                "relevantExcerpts": [
+                  "Alinhamento curricular referencial para 7º ano do Ensino Fundamental no eixo de ADIÇÃO DE NÚMEROS INTEIROS."
+                ],
+                "consultedAt": "2026-11-13T23:26:21.512Z"
+              },
+              {
+                "author": "DUVAL, Raymond",
+                "title": "Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática",
+                "year": "2003",
+                "publication": "Aprendizagem em matemática: registros de representação semiótica (org. Machado)",
+                "doiOrIsbn": "",
+                "url": "",
+                "sourceType": "Literatura acadêmica (referência conceitual)",
+                "evidenceType": "Teórica",
+                "accessState": "Referência localizada",
+                "relevantExcerpts": [
+                  "Coordenação entre registro em língua natural, algébrico e gráfico."
+                ],
+                "consultedAt": "2026-11-13T23:26:21.512Z"
+              }
+            ],
+            "documentaryLimitations": [
+              "Sem busca externa ativa em modo offline; referências com estado \"Metadados\" ou \"Referência localizada\" não devem ser declaradas como consulta integral.",
+              "Afirmações históricas ou citações textuais literais exigem verificação direta em fonte primária."
+            ],
+            "claimsRequiringVerification": [
+              "Verificar códigos específicos de habilidade da BNCC aplicáveis a \"ADIÇÃO DE NÚMEROS INTEIROS\" em \"7º ano do Ensino Fundamental\" na edição vigente."
+            ],
+            "controversies": []
+          },
+          "didactic": {
+            "moduleRef": "M03 Engenharia Didática (v2.2 CANDIDATA REV5)",
+            "partA_didacticArchitecture": {
+              "duration": "50 minutos (1 aula padrão)",
+              "conceptualProgression": [
+                "1. Situação-problema intuitiva e levantamento de hipóteses.",
+                "2. Articulação entre representação em língua natural, visual/gráfica e simbólica.",
+                "3. Apoios contingentes graduados (exemplos guiados) com retirada progressiva na prática autônoma.",
+                "4. Sistematização conceitual e verificação formativa de transferência."
+              ],
+              "alignmentMatrix": [
+                {
+                  "objectiveId": "OBJ-1",
+                  "learningObjective": "Compreender os fundamentos conceituais de ADIÇÃO DE NÚMEROS INTEIROS.",
+                  "content": "ADIÇÃO DE NÚMEROS INTEIROS",
+                  "teachingStrategy": "Problematização inicial e diálogo socrático sobre conhecimentos prévios.",
+                  "activity": "Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo ADIÇÃO DE NÚMEROS INTEIROS.",
+                  "learningEvidence": "Registro escrito identificando grandezas envolvidas e relações entre elas.",
+                  "evaluationCriterion": "Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).",
+                  "operationalLevel": "Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada"
+                },
+                {
+                  "objectiveId": "OBJ-2",
+                  "learningObjective": "Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a ADIÇÃO DE NÚMEROS INTEIROS.",
+                  "content": "ADIÇÃO DE NÚMEROS INTEIROS",
+                  "teachingStrategy": "Modelagem comparativa entre representação verbal, gráfica e simbólica (Duval).",
+                  "activity": "Atividade Orientada 2: Converter o problema de ADIÇÃO DE NÚMEROS INTEIROS para tabela, gráfico e expressão algébrica.",
+                  "learningEvidence": "Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.",
+                  "evaluationCriterion": "Mantém consistência matemática/científica na passagem entre representações.",
+                  "operationalLevel": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "objectiveId": "OBJ-3",
+                  "learningObjective": "Resolver situações-problema graduadas e refletir sobre erros frequentes.",
+                  "content": "ADIÇÃO DE NÚMEROS INTEIROS",
+                  "teachingStrategy": "Resolução graduada com retirada progressiva de apoios e análise de erros.",
+                  "activity": "Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.",
+                  "learningEvidence": "Solução comentada com justificativa conceitual e verificação do resultado.",
+                  "evaluationCriterion": "Justifica a validade da resposta frente às condições do problema.",
+                  "operationalLevel": "Nível III (Proposição operacional MathLab): Transferência autônoma e justificação"
+                }
+              ],
+              "coherenceChecked": true,
+              "distinctionNote": "Objetivos, atividades, estratégias de ensino, evidências de aprendizagem e critérios de avaliação são mantidos como entidades distintas; realização de atividade não é confundida com aprendizagem demonstrada."
+            },
+            "partB_operationalSpecification": {
+              "taskSequencing": [
+                {
+                  "phase": "Abertura e Diagnóstico",
+                  "estimatedMinutes": 10,
+                  "level": "Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada"
+                },
+                {
+                  "phase": "Desenvolvimento Conceitual e Representações",
+                  "estimatedMinutes": 18,
+                  "level": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "phase": "Prática Graduada e Sistematização",
+                  "estimatedMinutes": 15,
+                  "level": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "phase": "Avaliação Formativa e Retomada",
+                  "estimatedMinutes": 7,
+                  "level": "Nível III (Proposição operacional MathLab): Transferência autônoma e justificação"
+                }
+              ],
+              "identifiedObstacles": [
+                "Risco de aplicação mecânica de regras em ADIÇÃO DE NÚMEROS INTEIROS sem compreender o significado das variáveis ou relações.",
+                "Dificuldade de conversão entre enunciado verbal, tabela/gráfico e notação simbólica."
+              ]
+            }
+          },
+          "pedagogical": {
+            "moduleRef": "M02 Motor Pedagógico (v2.3.7 CANDIDATA REV6 / v2.3.6 BASELINE)",
+            "mobilizedFrameworks": [
+              {
+                "id": "vygotsky",
+                "label": "Vigotski / Matriz Histórico-Cultural",
+                "coreFocus": "Zona de Desenvolvimento Proximal (ZDP) e mediação semiótica (não reduzir a técnica mecânica de ajuda)."
+              },
+              {
+                "id": "wood_bruner_ross",
+                "label": "Wood, Bruner & Ross (1976)",
+                "coreFocus": "Operacionalização empírica do suporte contingente (scaffolding) e retirada gradual de apoios."
+              },
+              {
+                "id": "duval",
+                "label": "Raymond Duval (2003)",
+                "coreFocus": "Conversão e tratamento entre múltiplos registros de representação semiótica."
+              },
+              {
+                "id": "udl_3_0",
+                "label": "CAST UDL Guidelines 3.0 (2024)",
+                "coreFocus": "Engajamento, Representação, Ação/Expressão e Agência do Estudante (aplicação contextual, não checklist)."
+              }
+            ],
+            "priorKnowledgeDiagnosis": {
+              "purpose": "Mapear concepções prévias e obstáculos antes da formalização.",
+              "checkpoints": [
+                "Operações fundamentais e leitura de expressões simples.",
+                "Interpretação de tabelas e relações numéricas básicas."
+              ]
+            },
+            "conceptualProgression": [
+              "1. Situação-problema intuitiva e levantamento de hipóteses.",
+              "2. Articulação entre representação em língua natural, visual/gráfica e simbólica.",
+              "3. Apoios contingentes graduados (exemplos guiados) com retirada progressiva na prática autônoma.",
+              "4. Sistematização conceitual e verificação formativa de transferência."
+            ],
+            "obstacleAnalysis": [
+              "Risco de aplicação mecânica de regras em ADIÇÃO DE NÚMEROS INTEIROS sem compreender o significado das variáveis ou relações.",
+              "Dificuldade de conversão entre enunciado verbal, tabela/gráfico e notação simbólica."
+            ],
+            "udlConsiderations": {
+              "applied": true,
+              "notes": [
+                "Alto contraste e descrições textuais de figuras"
+              ]
+            },
+            "epistemicGuardrail": "ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+          },
+          "versions": [
+            {
+              "versionNumber": 1,
+              "savedAt": "2026-11-13T23:26:21.536Z",
+              "author": "Geração Inicial",
+              "material": {
+                "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+                "title": "Matemática: ADIÇÃO DE NÚMEROS INTEIROS (7º ano do Ensino Fundamental)",
+                "printOptimized": true,
+                "blocks": [
+                  {
+                    "id": "blk-identificacao",
+                    "sectionType": "identificacao",
+                    "title": "1. Identificação",
+                    "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 50 minutos (1 aula padrão)\n**Tema:** ADIÇÃO DE NÚMEROS INTEIROS"
+                  },
+                  {
+                    "id": "blk-objetivos",
+                    "sectionType": "objetivos",
+                    "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                    "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de ADIÇÃO DE NÚMEROS INTEIROS.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a ADIÇÃO DE NÚMEROS INTEIROS.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+                  },
+                  {
+                    "id": "blk-problematizacao",
+                    "sectionType": "problematizacao",
+                    "title": "3. Contextualização e Problematização",
+                    "body": "Situação disparadora sobre **ADIÇÃO DE NÚMEROS INTEIROS**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+                  },
+                  {
+                    "id": "blk-desenvolvimento",
+                    "sectionType": "desenvolvimento_conceitual",
+                    "title": "4. Desenvolvimento Conceitual e Representações",
+                    "body": "Desenvolvimento conceitual de **ADIÇÃO DE NÚMEROS INTEIROS** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+                  },
+                  {
+                    "id": "blk-visual",
+                    "sectionType": "representacao_visual",
+                    "title": "5. Representação Visual Pedagógica",
+                    "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                    "latex": ""
+                  },
+                  {
+                    "id": "blk-exemplos",
+                    "sectionType": "exemplos_resolvidos",
+                    "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                    "body": "**Exemplo Guiado sobre ADIÇÃO DE NÚMEROS INTEIROS:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+                  },
+                  {
+                    "id": "blk-atividades",
+                    "sectionType": "atividades_graduadas",
+                    "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                    "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo ADIÇÃO DE NÚMEROS INTEIROS.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de ADIÇÃO DE NÚMEROS INTEIROS para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+                  },
+                  {
+                    "id": "blk-avaliacao",
+                    "sectionType": "avaliacao_formativa",
+                    "title": "8. Sistematização e Avaliação Formativa",
+                    "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+                  },
+                  {
+                    "id": "blk-referencias",
+                    "sectionType": "referencias",
+                    "title": "9. Referências e Limitações Documentais",
+                    "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+                  }
+                ]
+              }
+            },
+            {
+              "versionNumber": 2,
+              "savedAt": "2026-11-13T23:26:30.724Z",
+              "author": "Edição Humana",
+              "material": {
+                "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+                "title": "Matemática: ADIÇÃO DE NÚMEROS INTEIROS (7º ano do Ensino Fundamental)",
+                "printOptimized": true,
+                "blocks": [
+                  {
+                    "id": "blk-identificacao",
+                    "sectionType": "identificacao",
+                    "title": "1. Identificação",
+                    "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 50 minutos (1 aula padrão)\n**Tema:** ADIÇÃO DE NÚMEROS INTEIROS"
+                  },
+                  {
+                    "id": "blk-objetivos",
+                    "sectionType": "objetivos",
+                    "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                    "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de ADIÇÃO DE NÚMEROS INTEIROS.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a ADIÇÃO DE NÚMEROS INTEIROS.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+                  },
+                  {
+                    "id": "blk-problematizacao",
+                    "sectionType": "problematizacao",
+                    "title": "3. Contextualização e Problematização",
+                    "body": "Situação disparadora sobre **ADIÇÃO DE NÚMEROS INTEIROS**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+                  },
+                  {
+                    "id": "blk-desenvolvimento",
+                    "sectionType": "desenvolvimento_conceitual",
+                    "title": "4. Desenvolvimento Conceitual e Representações",
+                    "body": "Desenvolvimento conceitual de **ADIÇÃO DE NÚMEROS INTEIROS** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+                  },
+                  {
+                    "id": "blk-visual",
+                    "sectionType": "representacao_visual",
+                    "title": "5. Representação Visual Pedagógica",
+                    "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: ADIÇÃO DE NÚMEROS INTEIROS</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                    "latex": ""
+                  },
+                  {
+                    "id": "blk-exemplos",
+                    "sectionType": "exemplos_resolvidos",
+                    "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                    "body": "**Exemplo Guiado sobre ADIÇÃO DE NÚMEROS INTEIROS:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+                  },
+                  {
+                    "id": "blk-atividades",
+                    "sectionType": "atividades_graduadas",
+                    "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                    "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo ADIÇÃO DE NÚMEROS INTEIROS.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de ADIÇÃO DE NÚMEROS INTEIROS para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+                  },
+                  {
+                    "id": "blk-avaliacao",
+                    "sectionType": "avaliacao_formativa",
+                    "title": "8. Sistematização e Avaliação Formativa",
+                    "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+                  },
+                  {
+                    "id": "blk-referencias",
+                    "sectionType": "referencias",
+                    "title": "9. Referências e Limitações Documentais",
+                    "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "PRJ-1794611896776-O7MI",
+      "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material",
+      "discipline": "Matemática",
+      "gradeLevel": "7º ano do Ensino Fundamental",
+      "description": "",
+      "archived": false,
+      "createdAt": "2026-11-13T23:18:16.781Z",
+      "updatedAt": "2026-11-13T23:18:52.011Z",
+      "materials": [
+        {
+          "id": "MAT-1794611896820-4MR9",
+          "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material (7º ano do Ensino Fundamental)",
+          "discipline": "Matemática",
+          "gradeLevel": "7º ano do Ensino Fundamental",
+          "workflowMode": "Auditoria",
+          "productionMode": "SINTESE_LOCAL_OFFLINE",
+          "createdAt": "2026-11-13T23:18:16.821Z",
+          "updatedAt": "2026-11-13T23:18:52.011Z",
+          "originalGeneratedMaterial": {
+            "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+            "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material (7º ano do Ensino Fundamental)",
+            "printOptimized": true,
+            "blocks": [
+              {
+                "id": "blk-identificacao",
+                "sectionType": "identificacao",
+                "title": "1. Identificação",
+                "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 6 aula\n**Tema:** numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material"
+              },
+              {
+                "id": "blk-objetivos",
+                "sectionType": "objetivos",
+                "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+              },
+              {
+                "id": "blk-problematizacao",
+                "sectionType": "problematizacao",
+                "title": "3. Contextualização e Problematização",
+                "body": "Situação disparadora sobre **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+              },
+              {
+                "id": "blk-desenvolvimento",
+                "sectionType": "desenvolvimento_conceitual",
+                "title": "4. Desenvolvimento Conceitual e Representações",
+                "body": "Desenvolvimento conceitual de **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+              },
+              {
+                "id": "blk-visual",
+                "sectionType": "representacao_visual",
+                "title": "5. Representação Visual Pedagógica",
+                "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                "latex": ""
+              },
+              {
+                "id": "blk-exemplos",
+                "sectionType": "exemplos_resolvidos",
+                "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                "body": "**Exemplo Guiado sobre numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+              },
+              {
+                "id": "blk-atividades",
+                "sectionType": "atividades_graduadas",
+                "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+              },
+              {
+                "id": "blk-avaliacao",
+                "sectionType": "avaliacao_formativa",
+                "title": "8. Sistematização e Avaliação Formativa",
+                "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+              },
+              {
+                "id": "blk-referencias",
+                "sectionType": "referencias",
+                "title": "9. Referências e Limitações Documentais",
+                "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+              }
+            ]
+          },
+          "currentMaterial": {
+            "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+            "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material (7º ano do Ensino Fundamental)",
+            "printOptimized": true,
+            "blocks": [
+              {
+                "id": "blk-identificacao",
+                "sectionType": "identificacao",
+                "title": "1. Identificação",
+                "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 6 aula\n**Tema:** numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material"
+              },
+              {
+                "id": "blk-objetivos",
+                "sectionType": "objetivos",
+                "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+              },
+              {
+                "id": "blk-problematizacao",
+                "sectionType": "problematizacao",
+                "title": "3. Contextualização e Problematização",
+                "body": "Situação disparadora sobre **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+              },
+              {
+                "id": "blk-desenvolvimento",
+                "sectionType": "desenvolvimento_conceitual",
+                "title": "4. Desenvolvimento Conceitual e Representações",
+                "body": "Desenvolvimento conceitual de **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+              },
+              {
+                "id": "blk-visual",
+                "sectionType": "representacao_visual",
+                "title": "5. Representação Visual Pedagógica",
+                "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                "latex": ""
+              },
+              {
+                "id": "blk-exemplos",
+                "sectionType": "exemplos_resolvidos",
+                "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                "body": "**Exemplo Guiado sobre numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+              },
+              {
+                "id": "blk-atividades",
+                "sectionType": "atividades_graduadas",
+                "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+              },
+              {
+                "id": "blk-avaliacao",
+                "sectionType": "avaliacao_formativa",
+                "title": "8. Sistematização e Avaliação Formativa",
+                "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+              },
+              {
+                "id": "blk-referencias",
+                "sectionType": "referencias",
+                "title": "9. Referências e Limitações Documentais",
+                "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+              }
+            ]
+          },
+          "audit": {
+            "moduleRef": "M05 Auditoria de Qualidade (v2.1 CANDIDATA REV5)",
+            "auditedAt": "2026-11-13T23:18:16.737Z",
+            "categoriesCovered": [
+              "Científica",
+              "Conceitual",
+              "Histórica",
+              "Normativa",
+              "Pedagógica",
+              "Didática",
+              "Matemática",
+              "Documental",
+              "Editorial",
+              "Acessibilidade"
+            ],
+            "status": "APROVADO_COM_RESSALVAS",
+            "hardFails": [],
+            "softWarnings": [
+              {
+                "category": "Documental",
+                "location": "9. Referências e Limitações Documentais",
+                "problem": "2 referência(s) não possuem acesso \"Integral\" (Metadados, Referência localizada).",
+                "recommendedFix": "Manter o nível de acesso declarado e verificar fontes primárias antes de publicação final."
+              }
+            ],
+            "autoApprovalBlocked": false
+          },
+          "scientific": {
+            "moduleRef": "M01 Base Científica (v2.3.3 CANDIDATA REV6 / v2.3.2 REV5)",
+            "discipline": "Matemática",
+            "topic": "numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material",
+            "references": [
+              {
+                "author": "BRASIL. Ministério da Educação",
+                "title": "Base Nacional Comum Curricular (BNCC) — Matemática",
+                "year": "2018",
+                "publication": "MEC",
+                "doiOrIsbn": "",
+                "url": "",
+                "sourceType": "Documento normativo oficial",
+                "evidenceType": "Normativa",
+                "accessState": "Metadados",
+                "relevantExcerpts": [
+                  "Alinhamento curricular referencial para 7º ano do Ensino Fundamental no eixo de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material."
+                ],
+                "consultedAt": "2026-11-13T23:18:16.727Z"
+              },
+              {
+                "author": "DUVAL, Raymond",
+                "title": "Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática",
+                "year": "2003",
+                "publication": "Aprendizagem em matemática: registros de representação semiótica (org. Machado)",
+                "doiOrIsbn": "",
+                "url": "",
+                "sourceType": "Literatura acadêmica (referência conceitual)",
+                "evidenceType": "Teórica",
+                "accessState": "Referência localizada",
+                "relevantExcerpts": [
+                  "Coordenação entre registro em língua natural, algébrico e gráfico."
+                ],
+                "consultedAt": "2026-11-13T23:18:16.727Z"
+              }
+            ],
+            "documentaryLimitations": [
+              "Sem busca externa ativa em modo offline; referências com estado \"Metadados\" ou \"Referência localizada\" não devem ser declaradas como consulta integral.",
+              "Afirmações históricas ou citações textuais literais exigem verificação direta em fonte primária."
+            ],
+            "claimsRequiringVerification": [
+              "Verificar códigos específicos de habilidade da BNCC aplicáveis a \"numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material\" em \"7º ano do Ensino Fundamental\" na edição vigente."
+            ],
+            "controversies": []
+          },
+          "didactic": {
+            "moduleRef": "M03 Engenharia Didática (v2.2 CANDIDATA REV5)",
+            "partA_didacticArchitecture": {
+              "duration": "6 aula",
+              "conceptualProgression": [
+                "1. Situação-problema intuitiva e levantamento de hipóteses.",
+                "2. Articulação entre representação em língua natural, visual/gráfica e simbólica.",
+                "3. Apoios contingentes graduados (exemplos guiados) com retirada progressiva na prática autônoma.",
+                "4. Sistematização conceitual e verificação formativa de transferência."
+              ],
+              "alignmentMatrix": [
+                {
+                  "objectiveId": "OBJ-1",
+                  "learningObjective": "Compreender os fundamentos conceituais de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.",
+                  "content": "numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material",
+                  "teachingStrategy": "Problematização inicial e diálogo socrático sobre conhecimentos prévios.",
+                  "activity": "Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.",
+                  "learningEvidence": "Registro escrito identificando grandezas envolvidas e relações entre elas.",
+                  "evaluationCriterion": "Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).",
+                  "operationalLevel": "Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada"
+                },
+                {
+                  "objectiveId": "OBJ-2",
+                  "learningObjective": "Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.",
+                  "content": "numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material",
+                  "teachingStrategy": "Modelagem comparativa entre representação verbal, gráfica e simbólica (Duval).",
+                  "activity": "Atividade Orientada 2: Converter o problema de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material para tabela, gráfico e expressão algébrica.",
+                  "learningEvidence": "Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.",
+                  "evaluationCriterion": "Mantém consistência matemática/científica na passagem entre representações.",
+                  "operationalLevel": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "objectiveId": "OBJ-3",
+                  "learningObjective": "Resolver situações-problema graduadas e refletir sobre erros frequentes.",
+                  "content": "numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material",
+                  "teachingStrategy": "Resolução graduada com retirada progressiva de apoios e análise de erros.",
+                  "activity": "Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.",
+                  "learningEvidence": "Solução comentada com justificativa conceitual e verificação do resultado.",
+                  "evaluationCriterion": "Justifica a validade da resposta frente às condições do problema.",
+                  "operationalLevel": "Nível III (Proposição operacional MathLab): Transferência autônoma e justificação"
+                }
+              ],
+              "coherenceChecked": true,
+              "distinctionNote": "Objetivos, atividades, estratégias de ensino, evidências de aprendizagem e critérios de avaliação são mantidos como entidades distintas; realização de atividade não é confundida com aprendizagem demonstrada."
+            },
+            "partB_operationalSpecification": {
+              "taskSequencing": [
+                {
+                  "phase": "Abertura e Diagnóstico",
+                  "estimatedMinutes": 10,
+                  "level": "Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada"
+                },
+                {
+                  "phase": "Desenvolvimento Conceitual e Representações",
+                  "estimatedMinutes": 18,
+                  "level": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "phase": "Prática Graduada e Sistematização",
+                  "estimatedMinutes": 15,
+                  "level": "Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada"
+                },
+                {
+                  "phase": "Avaliação Formativa e Retomada",
+                  "estimatedMinutes": 7,
+                  "level": "Nível III (Proposição operacional MathLab): Transferência autônoma e justificação"
+                }
+              ],
+              "identifiedObstacles": [
+                "Risco de aplicação mecânica de regras em numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material sem compreender o significado das variáveis ou relações.",
+                "Dificuldade de conversão entre enunciado verbal, tabela/gráfico e notação simbólica."
+              ]
+            }
+          },
+          "pedagogical": {
+            "moduleRef": "M02 Motor Pedagógico (v2.3.7 CANDIDATA REV6 / v2.3.6 BASELINE)",
+            "mobilizedFrameworks": [
+              {
+                "id": "vygotsky",
+                "label": "Vigotski / Matriz Histórico-Cultural",
+                "coreFocus": "Zona de Desenvolvimento Proximal (ZDP) e mediação semiótica (não reduzir a técnica mecânica de ajuda)."
+              },
+              {
+                "id": "wood_bruner_ross",
+                "label": "Wood, Bruner & Ross (1976)",
+                "coreFocus": "Operacionalização empírica do suporte contingente (scaffolding) e retirada gradual de apoios."
+              },
+              {
+                "id": "duval",
+                "label": "Raymond Duval (2003)",
+                "coreFocus": "Conversão e tratamento entre múltiplos registros de representação semiótica."
+              },
+              {
+                "id": "galperin",
+                "label": "P. Ya. Galperin",
+                "coreFocus": "Formação por etapas das ações mentais (base orientadora da ação, materializada, verbal e mental)."
+              },
+              {
+                "id": "udl_3_0",
+                "label": "CAST UDL Guidelines 3.0 (2024)",
+                "coreFocus": "Engajamento, Representação, Ação/Expressão e Agência do Estudante (aplicação contextual, não checklist)."
+              }
+            ],
+            "priorKnowledgeDiagnosis": {
+              "purpose": "Mapear concepções prévias e obstáculos antes da formalização.",
+              "checkpoints": [
+                "Operações fundamentais e leitura de expressões simples.",
+                "Interpretação de tabelas e relações numéricas básicas."
+              ]
+            },
+            "conceptualProgression": [
+              "1. Situação-problema intuitiva e levantamento de hipóteses.",
+              "2. Articulação entre representação em língua natural, visual/gráfica e simbólica.",
+              "3. Apoios contingentes graduados (exemplos guiados) com retirada progressiva na prática autônoma.",
+              "4. Sistematização conceitual e verificação formativa de transferência."
+            ],
+            "obstacleAnalysis": [
+              "Risco de aplicação mecânica de regras em numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material sem compreender o significado das variáveis ou relações.",
+              "Dificuldade de conversão entre enunciado verbal, tabela/gráfico e notação simbólica."
+            ],
+            "udlConsiderations": {
+              "applied": true,
+              "notes": [
+                "Alto contraste e descrições textuais de figuras"
+              ]
+            },
+            "epistemicGuardrail": "ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+          },
+          "versions": [
+            {
+              "versionNumber": 1,
+              "savedAt": "2026-11-13T23:18:16.821Z",
+              "author": "Geração Inicial",
+              "material": {
+                "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+                "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material (7º ano do Ensino Fundamental)",
+                "printOptimized": true,
+                "blocks": [
+                  {
+                    "id": "blk-identificacao",
+                    "sectionType": "identificacao",
+                    "title": "1. Identificação",
+                    "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 6 aula\n**Tema:** numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material"
+                  },
+                  {
+                    "id": "blk-objetivos",
+                    "sectionType": "objetivos",
+                    "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                    "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+                  },
+                  {
+                    "id": "blk-problematizacao",
+                    "sectionType": "problematizacao",
+                    "title": "3. Contextualização e Problematização",
+                    "body": "Situação disparadora sobre **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+                  },
+                  {
+                    "id": "blk-desenvolvimento",
+                    "sectionType": "desenvolvimento_conceitual",
+                    "title": "4. Desenvolvimento Conceitual e Representações",
+                    "body": "Desenvolvimento conceitual de **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+                  },
+                  {
+                    "id": "blk-visual",
+                    "sectionType": "representacao_visual",
+                    "title": "5. Representação Visual Pedagógica",
+                    "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                    "latex": ""
+                  },
+                  {
+                    "id": "blk-exemplos",
+                    "sectionType": "exemplos_resolvidos",
+                    "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                    "body": "**Exemplo Guiado sobre numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+                  },
+                  {
+                    "id": "blk-atividades",
+                    "sectionType": "atividades_graduadas",
+                    "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                    "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+                  },
+                  {
+                    "id": "blk-avaliacao",
+                    "sectionType": "avaliacao_formativa",
+                    "title": "8. Sistematização e Avaliação Formativa",
+                    "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+                  },
+                  {
+                    "id": "blk-referencias",
+                    "sectionType": "referencias",
+                    "title": "9. Referências e Limitações Documentais",
+                    "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+                  }
+                ]
+              }
+            },
+            {
+              "versionNumber": 2,
+              "savedAt": "2026-11-13T23:18:52.011Z",
+              "author": "Edição Humana",
+              "material": {
+                "moduleRef": "M04 Design Editorial (v2.4 BASELINE)",
+                "title": "Matemática: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material (7º ano do Ensino Fundamental)",
+                "printOptimized": true,
+                "blocks": [
+                  {
+                    "id": "blk-identificacao",
+                    "sectionType": "identificacao",
+                    "title": "1. Identificação",
+                    "body": "**Disciplina:** Matemática | **Etapa:** 7º ano do Ensino Fundamental | **Duração:** 6 aula\n**Tema:** numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material"
+                  },
+                  {
+                    "id": "blk-objetivos",
+                    "sectionType": "objetivos",
+                    "title": "2. Objetivos de Aprendizagem e Conhecimentos Prévios",
+                    "body": "**Objetivos:**\n- Compreender os fundamentos conceituais de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Articular múltiplas representações (algébrica, gráfica e verbal) aplicadas a numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n- Resolver situações-problema graduadas e refletir sobre erros frequentes.\n\n**Conhecimentos prévios mobilizados:**\n- Operações fundamentais e leitura de expressões simples.\n- Interpretação de tabelas e relações numéricas básicas."
+                  },
+                  {
+                    "id": "blk-problematizacao",
+                    "sectionType": "problematizacao",
+                    "title": "3. Contextualização e Problematização",
+                    "body": "Situação disparadora sobre **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material**: quais relações permanecem invariantes quando alteramos os dados iniciais do problema?"
+                  },
+                  {
+                    "id": "blk-desenvolvimento",
+                    "sectionType": "desenvolvimento_conceitual",
+                    "title": "4. Desenvolvimento Conceitual e Representações",
+                    "body": "Desenvolvimento conceitual de **numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material** articulando definição, propriedades essenciais e transição entre linguagem natural e simbólica."
+                  },
+                  {
+                    "id": "blk-visual",
+                    "sectionType": "representacao_visual",
+                    "title": "5. Representação Visual Pedagógica",
+                    "body": "Figura funcional para coordenação entre registro gráfico e simbólico (Duval, 2003).",
+                    "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 430 115\" role=\"img\" aria-label=\"Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material\" style=\"max-width:100%;height:auto;background:#FFFFFF;border:1px solid #CBD5E1;border-radius:8px;\">\n  <rect x=\"0\" y=\"0\" width=\"430\" height=\"115\" fill=\"#FFFFFF\" />\n  <text x=\"215\" y=\"24\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"12\" font-weight=\"bold\" fill=\"#0A2540\">Arquitetura Conceitual: numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material</text>\n  <rect x=\"16\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"61\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Situação-Problema</text>\n  <line x1=\"106\" y1=\"68\" x2=\"116\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"118\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"163\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Tabela / Gráfico</text>\n  <line x1=\"208\" y1=\"68\" x2=\"218\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"220\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"265\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Modelo Simbólico</text>\n  <line x1=\"310\" y1=\"68\" x2=\"320\" y2=\"68\" stroke=\"#0A2540\" stroke-width=\"2\" />\n  <rect x=\"322\" y=\"44\" width=\"90\" height=\"48\" rx=\"6\" fill=\"#F8FAFC\" stroke=\"#0A2540\" stroke-width=\"1.5\" />\n  <text x=\"367\" y=\"72\" text-anchor=\"middle\" font-family=\"Segoe UI, Arial, sans-serif\" font-size=\"10\" font-weight=\"bold\" fill=\"#0A2540\">Sistematização</text>\n  \n</svg>",
+                    "latex": ""
+                  },
+                  {
+                    "id": "blk-exemplos",
+                    "sectionType": "exemplos_resolvidos",
+                    "title": "6. Exemplos Resolvidos (Apoio Contingente)",
+                    "body": "**Exemplo Guiado sobre numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material:**\nPasso 1: Identificar variáveis e condições.\nPasso 2: Aplicar o modelo conceitual.\nPasso 3: Verificar consistência da resposta no contexto inicial."
+                  },
+                  {
+                    "id": "blk-atividades",
+                    "sectionType": "atividades_graduadas",
+                    "title": "7. Atividades Graduadas (Orientadas e Independentes)",
+                    "body": "- **Atividade 1 (Nível I (Proposição operacional MathLab): Reconhecimento e mobilização guiada):** Atividade Diagnóstica/Orientada 1: Interpretar situação-problema envolvendo numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material.\n  *Evidência esperada:* Registro escrito identificando grandezas envolvidas e relações entre elas.\n- **Atividade 2 (Nível II (Proposição operacional MathLab): Coordenação de representações e aplicação orientada):** Atividade Orientada 2: Converter o problema de numeros inteiros, usando DUA e Psicologia Historico-Cultural, pesquisar e elaborar o todo o material para tabela, gráfico e expressão algébrica.\n  *Evidência esperada:* Produção coerente de pelo menos duas representações equivalentes para o mesmo objeto.\n- **Atividade 3 (Nível III (Proposição operacional MathLab): Transferência autônoma e justificação):** Atividade Independente 3: Resolver e justificar caso novo sem roteiro passo a passo.\n  *Evidência esperada:* Solução comentada com justificativa conceitual e verificação do resultado."
+                  },
+                  {
+                    "id": "blk-avaliacao",
+                    "sectionType": "avaliacao_formativa",
+                    "title": "8. Sistematização e Avaliação Formativa",
+                    "body": "**Síntese:** Peça aos estudantes que expliquem com suas próprias palavras por que a solução deve satisfazer todas as condições do problema.\n**Critérios formativos:**\n- Identifica dados relevantes e formula hipótese coerente (não basta apenas copiar o enunciado).\n- Mantém consistência matemática/científica na passagem entre representações.\n- Justifica a validade da resposta frente às condições do problema."
+                  },
+                  {
+                    "id": "blk-referencias",
+                    "sectionType": "referencias",
+                    "title": "9. Referências e Limitações Documentais",
+                    "body": "- BRASIL. Ministério da Educação (2018). *Base Nacional Comum Curricular (BNCC) — Matemática*. [Normativa | Acesso: Metadados]\n- DUVAL, Raymond (2003). *Registros de representações semióticas e funcionamento cognitivo da compreensão em matemática*. [Teórica | Acesso: Referência localizada]\n\n**Nota editorial:** ZDP (Vigotski) não é reduzida a técnica de ajuda; suporte contingente gradual (scaffolding) é atribuído à operacionalização empírica de Wood, Bruner & Ross (1976)."
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

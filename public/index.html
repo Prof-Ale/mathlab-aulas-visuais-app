@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MathLab Aulas Visuais</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">ML</div>
+      <div>
+        <h1 class="brand-title">MATHLAB AULAS VISUAIS</h1>
+        <p class="brand-subtitle">Ambiente inteligente de autoria docente, pesquisa científica, engenharia didática e produção visual</p>
+      </div>
+    </div>
+    <nav class="nav-tabs" aria-label="Menu principal">
+      <button class="nav-btn active" data-view="home">Início</button>
+      <button class="nav-btn" data-view="creator">Criar Material</button>
+      <button class="nav-btn" data-view="projects">Projetos &amp; Biblioteca</button>
+      <button class="nav-btn" data-view="research">Pesquisa (M01)</button>
+      <button class="nav-btn" data-view="editor">Editor de Materiais</button>
+      <button class="nav-btn" data-view="audit">Auditoria (M05)</button>
+      <button class="nav-btn" data-view="export">Exportação</button>
+      <button class="nav-btn" data-view="settings">Base Intelectual &amp; Config</button>
+    </nav>
+  </header>
+
+  <main class="container" id="conteudo" tabindex="-1">
+    <div id="globalAlert" class="alert-banner" style="display:none;" role="status" aria-live="polite"></div>
+
+    <!-- 1. INÍCIO / DASHBOARD -->
+    <section id="view-home" class="view-panel active">
+      <div class="card card-accent">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Bem-vindo ao MathLab Aulas Visuais</h2>
+        <p class="muted">Transforme solicitações em linguagem natural em aulas estruturadas com fundamentação científica (M01), motor pedagógico (M02), matriz didática (M03), visual editorial/SVG (M04) e auditoria (M05).</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;">
+          <button id="btnDashNewLesson" class="btn btn-gold">+ Criar Novo Material</button>
+          <button id="btnDashNewProject" class="btn">+ Novo Projeto</button>
+          <button id="btnDashOpenLibrary" class="btn btn-secondary">Biblioteca de Materiais</button>
+          <button id="btnDashOpenAudit" class="btn btn-secondary">Acessar Auditoria (M05)</button>
+        </div>
+      </div>
+
+      <div class="grid-3" id="dashKpis"></div>
+
+      <div class="grid-2">
+        <div class="card">
+          <h3 style="margin-top:0;color:var(--ml-navy);">Projetos Recentes</h3>
+          <div id="dashRecentProjects"></div>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;color:var(--ml-navy);">Status do Sistema &amp; Provedores</h3>
+          <div id="dashSystemStatus"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CRIAR AULA (LINGUAGEM NATURAL) -->
+    <section id="view-creator" class="view-panel">
+      <div class="card card-accent">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Criar material</h2>
+        <p class="muted">Descreva sua necessidade pedagógica em linguagem natural. O sistema identifica a área do conhecimento e o tipo de documento, e você pode corrigir os dois depois de gerar.</p>
+
+        <label for="inputNaturalPrompt"><strong>Solicitação em linguagem natural</strong></label>
+        <textarea id="inputNaturalPrompt" rows="4" placeholder="Ex.: Elabore uma aula de Matemática para o 8º ano sobre sistemas de equações do primeiro grau. Quero uma abordagem conceitual, representação gráfica, exemplos resolvidos, atividades graduadas e avaliação formativa."></textarea>
+
+        <div class="grid-2" style="margin-top:12px;">
+          <div>
+            <label for="selectTargetProject"><strong>Salvar em qual projeto</strong></label>
+            <select id="selectTargetProject"></select>
+          </div>
+        </div>
+
+        <details class="ctx-form" style="margin-top:12px;">
+          <summary><strong>Opções avançadas</strong> <span class="muted">(modo, duração e provedor externo)</span></summary>
+          <div class="grid-3" style="margin-top:8px;">
+            <div>
+              <label for="selectWorkflowMode"><strong>Modo</strong></label>
+              <select id="selectWorkflowMode">
+                <option value="">Detecção automática</option>
+                <option value="Professor">Professor</option>
+                <option value="Material Didático">Material Didático</option>
+                <option value="Pesquisador">Pesquisador</option>
+                <option value="Auditoria">Auditoria</option>
+              </select>
+            </div>
+            <div>
+              <label for="inputDuration"><strong>Duração (opcional)</strong></label>
+              <input id="inputDuration" type="text" placeholder="Ex.: 50 minutos" />
+            </div>
+          </div>
+          <label class="check-row" style="margin-top:10px;" for="chkUseGemini">
+            <input id="chkUseGemini" type="checkbox" />
+            <span>Usar a API do Gemini (desligado por padrão, tudo roda localmente). Sem API, use a ponte de copiar e colar no Editor.</span>
+          </label>
+        </details>
+
+        <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;">
+          <button id="btnRunWorkflow" class="btn btn-gold" type="button">Gerar material estruturado</button>
+          <button id="btnLoadSamplePrompt" class="btn btn-secondary" type="button">Preencher exemplo (8º ano, sistemas)</button>
+        </div>
+      </div>
+
+      <div id="workflowStagesBox" class="card" style="display:none;" aria-live="polite"></div>
+    </section>
+
+    <!-- 3. PROJETOS & BIBLIOTECA -->
+    <section id="view-projects" class="view-panel">
+      <div class="card">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Projetos &amp; Biblioteca de Materiais</h2>
+        <div class="grid-3" style="margin-bottom:12px;">
+          <div>
+            <label for="inputNewProjectTitle"><strong>Nome do novo projeto</strong></label>
+            <input id="inputNewProjectTitle" type="text" placeholder="Ex.: Álgebra 8º Ano - 2026" />
+          </div>
+          <div>
+            <label for="inputNewProjectDisc"><strong>Disciplina</strong></label>
+            <input id="inputNewProjectDisc" type="text" value="Matemática" />
+          </div>
+          <div style="display:flex;align-items:flex-end;">
+            <button id="btnCreateProject" class="btn btn-gold">Criar Projeto</button>
+          </div>
+        </div>
+        <div id="projectsListBox"></div>
+      </div>
+    </section>
+
+    <!-- 4. PESQUISA & FONTES (M01) -->
+    <section id="view-research" class="view-panel">
+      <div class="card">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Base Científica e Rastreabilidade de Fontes (M01)</h2>
+        <p class="muted">Adicione referências próprias do professor e consulte o nível de acesso real de cada fonte do material ativo.</p>
+        <div id="researchBox"></div>
+      </div>
+    </section>
+
+    <!-- 5. EDITOR DE MATERIAIS -->
+    <section id="view-editor" class="view-panel">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:12px;">
+          <div>
+            <h2 style="margin:0;color:var(--ml-navy);">Editor de Materiais Didáticos</h2>
+            <p class="muted" style="margin:0;">Edite blocos, reordene seções, adicione equações LaTeX e salve novas versões sem perder o original gerado.</p>
+          </div>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;" class="no-print">
+            <button id="btnAddBlock" class="btn btn-secondary">+ Adicionar Bloco</button>
+            <button id="btnSaveMaterialProject" class="btn btn-gold">Salvar Versão no Projeto</button>
+          </div>
+        </div>
+        <div id="editorBox"></div>
+      </div>
+    </section>
+
+    <!-- 6. AUDITORIA DE QUALIDADE (M05) -->
+    <section id="view-audit" class="view-panel">
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <h2 style="margin:0;color:var(--ml-navy);">Auditoria de qualidade (M05)</h2>
+          <button id="btnReRunAudit" class="btn">Reexecutar Auditoria no Material Atual</button>
+        </div>
+        <div id="auditBox" style="margin-top:12px;" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- 7. EXPORTAÇÃO REAL -->
+    <section id="view-export" class="view-panel">
+      <div class="card card-accent">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Exportação Real Verificada &amp; Pré-visualização</h2>
+        <p class="muted">Gere e baixe arquivos reais verificados no servidor (`.html` otimizado para impressão/PDF, `.docx` Word, `.pptx` PowerPoint, `.md` Markdown e `.svg`).</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;" class="no-print">
+          <button class="btn btn-gold" data-export-fmt="docx">Exportar DOCX (Word)</button>
+          <button class="btn" data-export-fmt="pptx">Exportar PPTX (Slides)</button>
+          <button class="btn" data-export-fmt="html">Exportar HTML (Imprimir / PDF)</button>
+          <button class="btn btn-secondary" data-export-fmt="md">Exportar Markdown (.md)</button>
+          <button class="btn btn-secondary" data-export-fmt="svg">Exportar Diagrama (.svg)</button>
+          <button id="btnPrintPreview" class="btn btn-secondary">Imprimir / Salvar PDF pelo Navegador</button>
+        </div>
+        <div id="avatarBox"></div>
+        <div id="exportReadyBox"></div>
+        <div id="exportResultBox" aria-live="polite"></div>
+        <h3 style="color:var(--ml-navy);">Pré-visualização</h3>
+        <div id="exportPreviewBox" class="card" style="background:#FFFFFF;"></div>
+      </div>
+    </section>
+
+    <!-- 8. BASE INTELECTUAL & CONFIGURAÇÕES -->
+    <section id="view-settings" class="view-panel">
+      <div class="card">
+        <h2 style="margin-top:0;color:var(--ml-navy);">Base Intelectual Recuperada (Fase Zero) &amp; Configurações</h2>
+        <p class="muted">Inventário em tempo real dos módulos M01–M05 e protocolos operacionais no disco, sem promoção automática de candidatas.</p>
+        <div id="knowledgeInventoryBox" class="table-wrap" tabindex="0" role="region" aria-label="Inventário de módulos, role para ver mais"></div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/app.js"></script>
+</body>
+</html>

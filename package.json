@@ -1,0 +1,14 @@
+{
+  "name": "mathlab-aulas-visuais",
+  "version": "1.0.0",
+  "description": "MathLab Aulas Visuais - Ambiente inteligente de autoria docente, pesquisa científica, engenharia didática, produção visual e exportação.",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

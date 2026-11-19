@@ -412,7 +412,7 @@ function buildPptxParagraphsXml(bodyText) {
     .join('');
 }
 
-export function buildPptxBuffer(material) {
+export function buildPptxBuffer(material, { avatar = null } = {}) {
   const blocks = (material.blocks || []).slice(0, 11);
   const slideEntries = [];
   const slideRels = [];
@@ -431,8 +431,24 @@ export function buildPptxBuffer(material) {
   };
 
   // Slide 1: Capa institucional Navy + Gold
+  // Avatar na capa: cabe em 2,7M x 4,3M EMU, encostado no canto inferior direito; título e subtítulo ficam mais estreitos.
+  let avatarPicXml = '';
+  let coverTextWidth = 7772400;
+  if (avatar) {
+    const scale = Math.min(2700000 / avatar.width, 4300000 / avatar.height);
+    const aw = Math.round(avatar.width * scale);
+    const ah = Math.round(avatar.height * scale);
+    const ax = 9144000 - aw - 350000;
+    const ay = 6858000 - ah - 250000;
+    coverTextWidth = 5200000;
+    avatarPicXml = `<p:pic>
+      <p:nvPicPr><p:cNvPr id="6" name="Avatar" descr="${escapeXml(avatar.alt)}"/><p:cNvPicPr><a:picLocks noChangeAspect="1"/></p:cNvPicPr><p:nvPr/></p:nvPicPr>
+      <p:blipFill><a:blip r:embed="rIdAvatar"/><a:stretch><a:fillRect/></a:stretch></p:blipFill>
+      <p:spPr><a:xfrm><a:off x="${ax}" y="${ay}"/><a:ext cx="${aw}" cy="${ah}"/></a:xfrm><a:prstGeom prst="rect"><a:avLst/></a:prstGeom></p:spPr>
+    </p:pic>`;
+  }
   const coverXml = `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main">
+<p:sld xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" xmlns:p="http://schemas.openxmlformats.org/presentationml/2006/main" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships">
   <p:cSld><p:spTree>
     <p:nvGrpSpPr><p:cNvPr id="1" name=""/><p:cNvGrpSpPr/><p:nvPr/></p:nvGrpSpPr>
     <p:grpSpPr/>
@@ -456,14 +472,15 @@ export function buildPptxBuffer(material) {
     </p:sp>
     <p:sp>
       <p:nvSpPr><p:cNvPr id="4" name="CoverTitle"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr>
-      <p:spPr><a:xfrm><a:off x="685800" y="2350000"/><a:ext cx="7772400" cy="1800000"/></a:xfrm></p:spPr>
+      <p:spPr><a:xfrm><a:off x="685800" y="2350000"/><a:ext cx="${coverTextWidth}" cy="1800000"/></a:xfrm></p:spPr>
       <p:txBody><a:bodyPr/><a:lstStyle/><a:p><a:r><a:rPr lang="pt-BR" sz="3400" b="1"><a:solidFill><a:srgbClr val="FFFFFF"/></a:solidFill></a:rPr><a:t>${escapeXml(material.title || 'MathLab Aulas Visuais')}</a:t></a:r></a:p></p:txBody>
     </p:sp>
     <p:sp>
       <p:nvSpPr><p:cNvPr id="5" name="CoverSubtitle"/><p:cNvSpPr/><p:nvPr/></p:nvSpPr>
-      <p:spPr><a:xfrm><a:off x="685800" y="4300000"/><a:ext cx="7772400" cy="600000"/></a:xfrm></p:spPr>
+      <p:spPr><a:xfrm><a:off x="685800" y="4300000"/><a:ext cx="${coverTextWidth}" cy="600000"/></a:xfrm></p:spPr>
       <p:txBody><a:bodyPr/><a:lstStyle/><a:p><a:r><a:rPr lang="pt-BR" sz="1600"><a:solidFill><a:srgbClr val="E5A000"/></a:solidFill></a:rPr><a:t>MathLab Aulas Visuais — Material Didático Estruturado</a:t></a:r></a:p></p:txBody>
     </p:sp>
+    ${avatarPicXml}
   </p:spTree></p:cSld>
 </p:sld>`;
   addSlide(1, coverXml);
@@ -535,16 +552,28 @@ export function buildPptxBuffer(material) {
 <Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
   <Default Extension="rels" ContentType="application/vnd.openxmlformats-package.relationships+xml"/>
   <Default Extension="xml" ContentType="application/xml"/>
+  ${avatar ? '<Default Extension="png" ContentType="image/png"/>' : ''}
   <Override PartName="/ppt/presentation.xml" ContentType="application/vnd.openxmlformats-officedocument.presentationml.presentation.main+xml"/>
   ${contentTypeOverrides.join('')}
 </Types>`;
+
+  const avatarEntries = avatar
+    ? [
+        {
+          name: 'ppt/slides/_rels/slide1.xml.rels',
+          data: `<?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships"><Relationship Id="rIdAvatar" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/image" Target="../media/avatar.png"/></Relationships>`
+        },
+        { name: 'ppt/media/avatar.png', data: avatar.buffer }
+      ]
+    : [];
 
   return buildZipArchive([
     { name: '[Content_Types].xml', data: contentTypes },
     { name: '_rels/.rels', data: rootRels },
     { name: 'ppt/presentation.xml', data: presentationXml },
     { name: 'ppt/_rels/presentation.xml.rels', data: presRels },
-    ...slideEntries
+    ...slideEntries,
+    ...avatarEntries
   ]);
 }
 
@@ -596,7 +625,7 @@ export async function exportMaterialToFile({
     mimeType = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document';
   } else if (ext === 'pptx') {
     filename = `${safeBase}.pptx`;
-    contentBuffer = buildPptxBuffer(material);
+    contentBuffer = buildPptxBuffer(material, { avatar });
     mimeType = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
   } else if (ext === 'svg') {
     const svgBlock = (material.blocks || []).find((b) => b.svg);

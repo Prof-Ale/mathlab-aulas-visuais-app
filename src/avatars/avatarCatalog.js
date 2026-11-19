@@ -91,7 +91,12 @@ const AREA_POSE = {
   Matemática: 'descobridor',
   'Física': 'descobridor',
   'Química': 'descobridor',
-  Biologia: 'descobridor'
+  Biologia: 'descobridor',
+  'História': 'pensador',
+  'Teologia e Ciências da Religião': 'pensador',
+  'Teoria Musical': 'descobridor',
+  Geografia: 'descobridor',
+  'Língua Portuguesa': 'acolhedor'
 };
 const DOCTYPE_POSE = {
   lista_exercicios: 'comemorador-trofeu',

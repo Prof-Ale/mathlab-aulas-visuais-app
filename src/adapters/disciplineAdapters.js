@@ -20,6 +20,8 @@ export const EPISTEMIC_NATURES = Object.freeze({
   THEORETICAL: { id: 'teorico', label: 'Conhecimento teórico e conceitual' },
   PHILOSOPHICAL: { id: 'filosofico', label: 'Conhecimento filosófico e argumentativo' },
   HISTORICAL: { id: 'historico', label: 'Conhecimento histórico e documental' },
+  THEOLOGICAL: { id: 'teologico', label: 'Conhecimento teológico e hermenêutico' },
+  LINGUISTIC: { id: 'linguistico', label: 'Conhecimento linguístico e descritivo' },
   NORMATIVE: { id: 'normativo', label: 'Conhecimento normativo e jurídico' },
   PROFESSIONAL: { id: 'profissional', label: 'Conhecimento profissional e técnico' },
   UNDETERMINED: { id: 'indeterminado', label: 'Natureza epistemológica ainda não determinada' }
@@ -31,7 +33,9 @@ export const GROUPS = Object.freeze({
   HUMANAS: 'Ciências Humanas e Sociais',
   PSI: 'Psicologia e Psicanálise',
   EDUCACAO: 'Educação e Desenvolvimento Humano',
-  SAUDE: 'Saúde e Áreas Profissionais'
+  SAUDE: 'Saúde e Áreas Profissionais',
+  ARTES: 'Artes e Linguagens',
+  LINGUAGENS: 'Linguagens e Códigos'
 });
 
 const N = EPISTEMIC_NATURES;
@@ -126,12 +130,15 @@ const BUILTIN_ADAPTERS = [
     names: ['biologia'],
     keywords: [
       { p: 'celula|celular|genetic|ecologi|fotossintese|organismo|dna\\b|ecossistema', w: 3 },
+      { p: 'selecao natural|mitose|meiose|respiracao celular|taxonomia|cadeia alimentar|sistema (digestorio|circulatorio|respiratorio|nervoso|imunologico)', w: 3 },
       { p: 'evolucao', w: 1 }
     ],
     subareas: [
-      { label: 'Citologia', p: ['celula', 'celular'] },
+      { label: 'Citologia', p: ['celula', 'celular', 'mitose', 'meiose'] },
       { label: 'Genética', p: ['genetic', 'dna'] },
-      { label: 'Ecologia', p: ['ecologi', 'ecossistema'] }
+      { label: 'Ecologia', p: ['ecologi', 'ecossistema', 'cadeia alimentar'] },
+      { label: 'Evolução', p: ['evolucao', 'selecao natural'] },
+      { label: 'Fisiologia', p: ['sistema (digestorio|circulatorio|respiratorio|nervoso)'] }
     ],
     natures: { primary: [N.EMPIRICAL], secondary: [N.EVIDENCE_BASED] },
     evidenceTypes: ['Observação', 'Experimento', 'Evidência comparada'],
@@ -346,6 +353,162 @@ const BUILTIN_ADAPTERS = [
     limits: ['O motor local não confere vigência de normas: exige consulta a fonte oficial.']
   },
   {
+    id: 'historia',
+    version: '0.1.0',
+    area: 'História',
+    group: GROUPS.HUMANAS,
+    names: ['historia'],
+    keywords: [
+      { p: 'revolucao (francesa|industrial|russa|farroupilha)|idade media|feudalismo|renascimento|imperio romano|antiguidade classica|guerra fria|guerras? mundiais?|primeira guerra|segunda guerra', w: 4 },
+      { p: 'brasil (colonia|imperio|colonial)|periodo colonial|escravidao|republica velha|era vargas|ditadura militar|independencia do brasil|abolicao', w: 4 },
+      { p: 'egito antigo|mesopotamia|grecia antiga|roma antiga|civilizacoes?', w: 3 },
+      { p: 'historia\\b|historiograf|fontes historicas|linha do tempo', w: 2 }
+    ],
+    subareas: [
+      { label: 'História antiga e medieval', p: ['egito antigo', 'mesopotamia', 'grecia antiga', 'roma antiga', 'idade media', 'feudalismo', 'imperio romano'] },
+      { label: 'História moderna e contemporânea', p: ['revolucao', 'renascimento', 'guerra', 'guerra fria'] },
+      { label: 'História do Brasil', p: ['brasil', 'colonial', 'escravidao', 'republica velha', 'era vargas', 'ditadura militar', 'abolicao', 'independencia'] }
+    ],
+    natures: { primary: [N.HISTORICAL], secondary: [N.THEORETICAL] },
+    evidenceTypes: ['Fontes primárias e secundárias', 'Historiografia'],
+    representations: ['Linhas do tempo', 'Mapas históricos', 'Quadros comparativos de fontes', 'Esquemas de causas e consequências'],
+    keyAuthors: [],
+    cautions: [
+      'Situar cada fato no tempo e no lugar; evitar anacronismo.',
+      'Distinguir fonte primária, fonte secundária e interpretação historiográfica.',
+      'Tratar causas como múltiplas e inter-relacionadas, sem causa única nem determinismo.',
+      'Conferir datas e nomes antes de usar: o motor local não verifica fatos.'
+    ],
+    auditFocus: ['Contextualização temporal', 'Uso crítico das fontes', 'Multicausalidade', 'Datas e nomes conferidos'],
+    doNotRequire: ['Demonstração formal', 'Evidência experimental', 'Diagrama SVG em texto narrativo ou analítico'],
+    limits: ['O motor local não verifica datas, nomes nem acontecimentos: o professor confere cada afirmação factual.']
+  },
+  {
+    id: 'teologia',
+    version: '0.1.0',
+    area: 'Teologia e Ciências da Religião',
+    group: GROUPS.HUMANAS,
+    names: ['teologia', 'ciencias da religiao', 'ensino religioso'],
+    keywords: [
+      { p: 'teologi|exegese|hermeneutica biblica|patristic|soteriologia|cristologia|escatologia|eclesiologia', w: 5 },
+      { p: 'biblia|biblic[oa]|evangelhos?|antigo testamento|novo testamento|escrituras sagradas|pentateuco|epistolas?', w: 4 },
+      { p: 'religiao|religioso|religiosidade|ciencias da religiao|ensino religioso|tradicoes religiosas', w: 3 },
+      { p: '\\bfe\\b|doutrina|sacramento|liturgia|cristianismo|islamismo|budismo|judaismo|hinduismo|candomble|umbanda', w: 2 }
+    ],
+    subareas: [
+      { label: 'Estudo bíblico e exegese', p: ['biblia', 'biblic', 'exegese', 'evangelho', 'testamento', 'epistola'] },
+      { label: 'Doutrina e teologia sistemática', p: ['doutrina', 'cristologia', 'soteriologia', 'escatologia', 'eclesiologia', 'teologi'] },
+      { label: 'Ciências da Religião e diversidade religiosa', p: ['ciencias da religiao', 'ensino religioso', 'tradicoes religiosas', 'religiao'] }
+    ],
+    natures: { primary: [N.THEOLOGICAL], secondary: [N.HISTORICAL, N.PHILOSOPHICAL] },
+    evidenceTypes: ['Texto sagrado e tradição interpretativa', 'Documentos históricos e confessionais', 'Argumentação teológica'],
+    representations: ['Linhas do tempo', 'Quadros comparativos de tradições', 'Mapas conceituais', 'Mapas históricos e geográficos'],
+    keyAuthors: [],
+    cautions: [
+      'Distinguir texto sagrado, tradição interpretativa e posição confessional; atribuir cada leitura a quem a sustenta.',
+      'Não apresentar a doutrina de uma tradição como consenso entre as religiões nem como resultado científico.',
+      'Citar texto sagrado com livro, capítulo, versículo e tradução usada.',
+      'Em escola pública, o Ensino Religioso é não proselitista: tratar as tradições como objeto de estudo e respeitar a diversidade religiosa.'
+    ],
+    auditFocus: ['Fidelidade ao texto e à tradição citada', 'Distinção entre fé, história e filosofia', 'Respeito à diversidade religiosa', 'Citação com referência completa'],
+    doNotRequire: ['Demonstração formal', 'Evidência experimental para afirmações de fé', 'Diagrama SVG em texto interpretativo'],
+    limits: ['O motor local não avalia verdade de fé nem substitui a orientação da tradição confessional do autor.']
+  },
+  {
+    id: 'teoria_musical',
+    version: '0.1.0',
+    area: 'Teoria Musical',
+    group: GROUPS.ARTES,
+    names: ['teoria musical', 'musicalizacao', 'educacao musical'],
+    keywords: [
+      { p: 'teoria musical|solfejo|musicalizacao|percepcao musical|harmonia|contraponto', w: 5 },
+      { p: 'escala (maior|menor|cromatica|pentatonica)|intervalo musical|acordes?\\b|tonalidade|armadura de clave|campo harmonico|circulo das quintas', w: 4 },
+      { p: 'compasso|clave de (sol|fa|do)|pauta|figuras? musicais?|semibreve|minima|seminima|colcheia|semicolcheia|pulsacao|andamento|semitom|semitons', w: 4 },
+      { p: 'melodia|ritmo|musica|violino|violao|piano', w: 1 }
+    ],
+    subareas: [
+      { label: 'Ritmo e compasso', p: ['compasso', 'semibreve', 'minima', 'seminima', 'colcheia', 'pulsacao', 'andamento', 'ritmo'] },
+      { label: 'Escalas e intervalos', p: ['escala', 'intervalo', 'semitom', 'tonalidade', 'armadura'] },
+      { label: 'Harmonia', p: ['harmonia', 'acorde', 'campo harmonico', 'circulo das quintas'] },
+      { label: 'Notação musical', p: ['pauta', 'clave', 'figuras? musicais?'] }
+    ],
+    natures: { primary: [N.THEORETICAL, N.PROFESSIONAL], secondary: [N.HISTORICAL] },
+    evidenceTypes: ['Tratados e métodos de teoria musical', 'Prática musical comentada'],
+    representations: ['Pauta e notação (descritas em texto)', 'Teclado ou braço do instrumento (diagramas)', 'Círculo das quintas', 'Quadro de figuras rítmicas'],
+    keyAuthors: [],
+    cautions: [
+      'Distinguir convenção de notação (o que foi combinado) de fenômeno acústico (o que é físico).',
+      'O sistema tonal e o temperamento igual são construções históricas e culturais, não a única organização possível dos sons.',
+      'Nomear as alturas com um único sistema (solfejo ou cifras) e não misturar convenções.',
+      'Conferir cada exemplo de notação e de intervalo nota a nota, de preferência ao instrumento.'
+    ],
+    auditFocus: ['Precisão dos intervalos e escalas', 'Coerência de compasso e valores', 'Convenções de nomenclatura', 'Exemplos conferidos'],
+    doNotRequire: ['Demonstração formal', 'Evidência empírica para convenções de notação'],
+    limits: ['O motor local não ouve nem lê partituras: exemplos de notação, intervalos e acordes precisam ser conferidos pelo professor.']
+  },
+  {
+    id: 'geografia',
+    version: '0.1.0',
+    area: 'Geografia',
+    group: GROUPS.HUMANAS,
+    names: ['geografia'],
+    keywords: [
+      { p: 'geografia|geografic[oa]s?|cartografia|geopolitica|urbanizacao|demografia', w: 5 },
+      { p: 'relevo|bioma|bacia hidrografica|vegetacao|hidrografia|placas tectonicas|migracao|densidade demografica|regioes do brasil|ibge', w: 4 },
+      { p: 'mapa|escala cartografica|projecao cartografica|latitude|longitude|fuso horario|coordenadas geograficas|rosa dos ventos', w: 4 },
+      { p: 'territorio|paisagem|globalizacao|populacao|clima\\b', w: 2 }
+    ],
+    subareas: [
+      { label: 'Cartografia', p: ['mapa', 'cartografi', 'escala cartografica', 'projecao', 'latitude', 'longitude', 'fuso horario', 'coordenadas'] },
+      { label: 'Geografia física', p: ['relevo', 'clima', 'bioma', 'bacia hidrografica', 'vegetacao', 'hidrografia', 'placas tectonicas'] },
+      { label: 'Geografia humana e econômica', p: ['urbanizacao', 'demografia', 'migracao', 'populacao', 'globalizacao', 'territorio', 'densidade demografica'] }
+    ],
+    natures: { primary: [N.EMPIRICAL], secondary: [] },
+    evidenceTypes: ['Dados estatísticos e cartográficos', 'Observação de campo', 'Estudos da área'],
+    representations: ['Mapas e croquis', 'Gráficos e tabelas de dados', 'Perfis topográficos', 'Climogramas', 'Blocos-diagrama'],
+    keyAuthors: [],
+    cautions: [
+      'Todo dado (população, área, índice) leva fonte e ano; dados mudam e o motor local não os atualiza.',
+      'Mapa em texto precisa dizer projeção, escala e o que está representado; toda projeção distorce alguma propriedade.',
+      'Distinguir tempo atmosférico (condição de um momento) de clima (padrão de longo prazo).',
+      'Em geografia humana, evitar hierarquias entre povos e lugares e dar atenção às escalas (local, regional, global).'
+    ],
+    auditFocus: ['Fonte e ano dos dados', 'Escala e projeção dos mapas', 'Distinção entre tempo e clima', 'Precisão de nomes e localizações'],
+    doNotRequire: ['Demonstração formal', 'Experimento de laboratório', 'Diagrama SVG em texto descritivo ou analítico'],
+    limits: ['O motor local não consulta bases de dados, não confere localizações nem gera mapas: números e mapas são conferidos pelo professor na fonte.']
+  },
+  {
+    id: 'lingua_portuguesa',
+    version: '0.1.0',
+    area: 'Língua Portuguesa',
+    group: GROUPS.LINGUAGENS,
+    names: ['lingua portuguesa', 'portugues'],
+    keywords: [
+      { p: 'lingua portuguesa|gramatica|ortografia|sintaxe|morfologia|semantica|interpretacao de texto|producao textual|redacao', w: 5 },
+      { p: 'substantivo|adjetivo|verbo|pronome|adverbio|preposicao|conjuncao|crase|concordancia (verbal|nominal)|regencia|pontuacao|oracao|periodo composto', w: 4 },
+      { p: 'genero textual|texto narrativo|texto dissertativo|argumentativo|coesao|coerencia|variacao linguistica|norma culta', w: 4 },
+      { p: 'leitura|escrita|texto|portugues', w: 1 }
+    ],
+    subareas: [
+      { label: 'Gramática e análise linguística', p: ['gramatica', 'sintaxe', 'morfologia', 'substantivo', 'adjetivo', 'verbo', 'pronome', 'crase', 'concordancia', 'regencia', 'oracao', 'periodo'] },
+      { label: 'Leitura e produção de texto', p: ['interpretacao', 'producao textual', 'redacao', 'genero textual', 'narrativo', 'dissertativo', 'argumentativo', 'coesao', 'coerencia'] },
+      { label: 'Variação linguística', p: ['variacao linguistica', 'norma culta'] }
+    ],
+    natures: { primary: [N.LINGUISTIC], secondary: [] },
+    evidenceTypes: ['Exemplos de uso real da língua', 'Gramáticas e descrições linguísticas', 'Corpora e textos autênticos'],
+    representations: ['Quadros de classes e funções', 'Esquemas de análise sintática', 'Textos autênticos comentados', 'Linhas de revisão de texto'],
+    keyAuthors: [],
+    cautions: [
+      'Partir de textos reais e do uso da língua; a regra vem depois do exemplo, não no lugar dele.',
+      'Distinguir norma-padrão, variação linguística e adequação à situação comunicativa, sem tratar variedades como erro.',
+      'Citar gramáticas e dicionários pela edição consultada; a norma pode variar entre obras e mudou com o Acordo Ortográfico.',
+      'Conferir toda forma gramatical e toda grafia de exemplo antes de usar; o motor local não verifica ortografia.'
+    ],
+    auditFocus: ['Fidelidade da regra ao uso real', 'Distinção entre norma e variação', 'Exemplos autênticos e conferidos', 'Terminologia gramatical consistente'],
+    doNotRequire: ['Demonstração formal', 'Evidência experimental', 'Diagrama SVG em texto analítico'],
+    limits: ['O motor local não corrige ortografia, concordância ou pontuação: o professor confere cada exemplo.']
+  },
+  {
     id: 'terapia_ocupacional',
     version: '0.1.0',
     area: 'Terapia Ocupacional',
@@ -462,6 +625,26 @@ const RULE_DECRETO_10502 = {
 };
 
 const AUDIT_RULES = {
+  biologia: [
+    {
+      id: 'BIO_TELEOLOGIA_EVOLUTIVA',
+      severity: 'soft',
+      category: 'Científica',
+      pattern: '(o animal|a especie|a planta|o organismo|os seres vivos)\\s+(precisou|necessitou|quis|decidiu)\\s+(de\\s+)?(se\\s+)?(adaptar|evoluir|mudar)|evoluiu\\s+para\\s+(poder|conseguir)',
+      unless: 'selecao natural|linguagem figurada|metafora|sem intencionalidade|sem intencao',
+      problem: 'Explicação evolutiva com intenção ou finalidade (teleologia): a evolução não ocorre porque o organismo precisa ou quer mudar.',
+      fix: 'Reescrever em termos de variação, hereditariedade e seleção natural: quem tem a característica vantajosa deixa mais descendentes.'
+    },
+    {
+      id: 'BIO_CARACTERISTICAS_ADQUIRIDAS',
+      severity: 'soft',
+      category: 'Científica',
+      pattern: 'caracteristicas adquiridas\\s+(sao|serao|podem ser)\\s+(herdadas|transmitidas|passadas)',
+      unless: 'lamarck|historic|refutad|epigenetic|nao sao',
+      problem: 'Afirma a herança de características adquiridas como fato, sem referência ao contexto histórico (Lamarck) nem à discussão atual.',
+      fix: 'Atribuir a ideia a Lamarck, explicar por que o modelo foi superado pela genética e, se couber, tratar a epigenética como tema distinto.'
+    }
+  ],
   matematica: [RULE_DIV_ZERO],
   fisica: [RULE_DIV_ZERO],
   quimica: [RULE_DIV_ZERO],
@@ -509,6 +692,159 @@ const AUDIT_RULES = {
       unless: 'nao ha consenso',
       problem: 'Interpretação filosófica apresentada como consenso ou como demonstração.',
       fix: 'Atribuir a tese ao autor ou à tradição interpretativa e indicar as leituras divergentes.'
+    }
+  ],
+  historia: [
+    {
+      id: 'HIS_CAUSA_UNICA',
+      severity: 'soft',
+      category: 'Histórica',
+      pattern: '\\b(a|uma)\\s+(unica\\s+causa|causa\\s+unica)|(foi|foram)\\s+causad[oa]s?\\s+(apenas|somente|exclusivamente)\\s+por|so\\s+aconteceu\\s+por\\s+causa',
+      unless: 'uma das causas|multiplas causas|varias causas|entre as causas',
+      problem: 'Explicação histórica reduzida a uma causa única.',
+      fix: 'Apresentar as causas como múltiplas e inter-relacionadas (econômicas, políticas, sociais, culturais) e indicar o peso que a historiografia atribui a cada uma.'
+    },
+    {
+      id: 'HIS_DESCOBRIMENTO_DO_BRASIL',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: 'descobrimento do brasil|descobriu o brasil|descoberta do brasil',
+      unless: 'expressao|termo|historiograf|chegada dos portugueses|invasao|discut',
+      problem: 'Usa "descobrimento do Brasil" sem discutir a expressão, que tem perspectiva eurocêntrica e é debatida pela historiografia.',
+      fix: 'Contextualizar a expressão ou preferir formulações como "chegada dos portugueses", indicando a perspectiva dos povos originários.'
+    },
+    {
+      id: 'HIS_ESCRAVOS_TERMO',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: '\\bescravos\\b',
+      unless: 'escravizad|terminologia|(termo|expressao)\\s+.?escravo',
+      problem: 'Usa "escravos" como identidade das pessoas, sem a ressalva terminológica adotada por parte da historiografia.',
+      fix: 'Considerar "pessoas escravizadas", que marca a escravidão como condição imposta, ou explicar a escolha do termo.'
+    },
+    {
+      id: 'HIS_DATA_LEI_AUREA',
+      severity: 'soft',
+      category: 'Histórica',
+      pattern: 'lei aurea[^.\\n]{0,60}\\b(1[0-9]{3}|20[0-9]{2})\\b',
+      unless: '1888',
+      problem: 'A Lei Áurea é citada com ano diferente de 1888.',
+      fix: 'Conferir a data: a Lei Áurea (Lei nº 3.353) foi sancionada em 13 de maio de 1888.'
+    },
+    {
+      id: 'HIS_DATA_PROCLAMACAO_REPUBLICA',
+      severity: 'soft',
+      category: 'Histórica',
+      pattern: 'proclamacao da republica[^.\\n]{0,60}\\b(1[0-9]{3}|20[0-9]{2})\\b',
+      unless: '1889',
+      problem: 'A Proclamação da República é citada com ano diferente de 1889.',
+      fix: 'Conferir a data: a República foi proclamada em 15 de novembro de 1889.'
+    }
+  ],
+  teologia: [
+    {
+      id: 'TEO_DOUTRINA_COMO_CONSENSO',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: 'todas as religioes\\s+(ensinam|dizem|afirmam|defendem|pregam)|a\\s+(unica\\s+)?religiao\\s+verdadeira|(prova|comprova|demonstra)\\w*\\s+cientificamente\\s+(a\\s+)?(existencia de deus|a biblia|a fe)',
+      unless: 'na perspectiva|segundo a tradicao|para (os|as) (fieis|adeptos|cristaos|muculmanos|judeus)|nao ha consenso',
+      problem: 'Apresenta uma posição confessional como consenso entre as religiões, como verdade geral ou como resultado científico.',
+      fix: 'Atribuir a afirmação à tradição que a sustenta ("segundo...", "na perspectiva de...") e distinguir fé, história e ciência.'
+    },
+    {
+      id: 'TEO_CITACAO_SEM_REFERENCIA',
+      severity: 'soft',
+      category: 'Metodológica',
+      pattern: 'a biblia\\s+(diz|afirma|ensina|declara)\\s+que',
+      unless: '\\b\\d{1,3}\\s*[:.]\\s*\\d{1,3}\\b|traducao|versao',
+      problem: 'Atribui uma afirmação à Bíblia sem indicar livro, capítulo, versículo e tradução.',
+      fix: 'Citar o trecho com livro, capítulo e versículo, informar a tradução usada e distinguir o texto da interpretação.'
+    }
+  ],
+  teoria_musical: [
+    {
+      id: 'MUS_TOM_SEMITOM',
+      severity: 'hard',
+      category: 'Musical',
+      pattern: '\\bum tom\\s+(e igual a|equivale a|corresponde a|tem|e)\\s+(1|um|3|tres|4|quatro)\\s+semit(om|ons)\\b|\\bum semitom\\s+(e igual a|equivale a|corresponde a)\\s+(2|dois|duas)\\s+tons?\\b',
+      problem: 'Relação incorreta entre tom e semitom: um tom equivale a dois semitons.',
+      fix: 'Corrigir a relação (1 tom = 2 semitons; 1 semitom = meio tom) e conferir os intervalos que dependem dela.'
+    },
+    {
+      id: 'MUS_VALOR_SEM_COMPASSO',
+      severity: 'soft',
+      category: 'Musical',
+      pattern: '\\b(semibreve|minima|seminima|colcheia|semicolcheia)\\s+vale\\s+(um|uma|dois|duas|tres|quatro|meio|meia|[0-9]+)\\s+tempos?',
+      unless: 'compasso|unidade de tempo|\\b[0-9]\\s*/\\s*[0-9]\\b',
+      problem: 'Afirma o valor de uma figura em tempos sem indicar a unidade de tempo do compasso.',
+      fix: 'Dizer a unidade de tempo (por exemplo, em compasso 4/4 a semínima vale um tempo) ou expressar o valor por relação entre figuras.'
+    },
+    {
+      id: 'MUS_LINGUAGEM_UNIVERSAL',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: 'a musica e (uma )?linguagem universal|todas as culturas (usam|tem|possuem) (as mesmas|a mesma) (escalas?|notas?)',
+      unless: '\\bmitos?\\b|discut|etnomusicolog|nao e universal|culturalmente situad',
+      problem: 'Trata a música, ou a organização das notas ocidental, como universal.',
+      fix: 'Apresentar o sistema tonal e o temperamento igual como construção histórica e cultural e mencionar outras organizações sonoras.'
+    }
+  ],
+  geografia: [
+    {
+      id: 'GEO_CAPITAL_DO_BRASIL',
+      severity: 'hard',
+      category: 'Geográfica',
+      pattern: 'a capital do brasil e\\s+(o\\s+)?(rio de janeiro|sao paulo|salvador)',
+      unless: 'ja foi|antiga capital|ate 19[0-9]{2}|era a capital',
+      problem: 'A capital do Brasil é Brasília desde 1960; a frase atribui o título a outra cidade.',
+      fix: 'Corrigir para Brasília e, se o tema for histórico, indicar que Salvador (até 1763) e o Rio de Janeiro (até 1960) foram capitais anteriores.'
+    },
+    {
+      id: 'GEO_TEMPO_CLIMA',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: 'o clima (hoje|amanha|desta semana|de hoje|desta manha|desta tarde)|(tempo|clima)\\s+e\\s+(clima|tempo)\\s+sao\\s+(a mesma coisa|sinonimos)',
+      unless: 'tempo atmosferico|longo prazo|padrao climatico',
+      problem: 'Confunde tempo atmosférico (condição de um momento) com clima (padrão de longo prazo).',
+      fix: 'Usar "tempo atmosférico" para o estado da atmosfera num momento e "clima" para o padrão observado ao longo de décadas.'
+    },
+    {
+      id: 'GEO_PROJECAO_SEM_DISTORCAO',
+      severity: 'soft',
+      category: 'Cartográfica',
+      pattern: 'projecao (de )?mercator',
+      unless: 'distorc|deform|exager|areas? (reais|relativas)|peters|robinson',
+      problem: 'Cita a projeção de Mercator sem discutir que ela distorce áreas em latitudes altas.',
+      fix: 'Indicar que a projeção preserva ângulos e distorce áreas, e comparar com outra projeção quando o tema for tamanho de países.'
+    },
+    {
+      id: 'GEO_TERCEIRO_MUNDO',
+      severity: 'soft',
+      category: 'Conceitual',
+      pattern: 'terceiro mundo',
+      unless: 'guerra fria|historic|termo|expressao|criticad',
+      problem: 'Usa "Terceiro Mundo" sem contextualizar a expressão, hoje criticada por hierarquizar países.',
+      fix: 'Contextualizar a origem na Guerra Fria ou preferir critérios explícitos (renda, IDH, região) citando a fonte do dado.'
+    }
+  ],
+  lingua_portuguesa: [
+    {
+      id: 'PORT_ERRO_LINGUISTICO',
+      severity: 'soft',
+      category: 'Linguística',
+      pattern: '\\bfal(a|am|ar|ou)\\s+errad[oa]|portugues errado|erro de portugues',
+      unless: 'preconceito linguistico|\\bmitos?\\b|adequacao (a|as|da|de) situacao|adequacao comunicativa',
+      problem: 'Trata a variação linguística como erro, sem distinguir norma-padrão e adequação à situação.',
+      fix: 'Reformular em termos de adequação à situação comunicativa e de distância em relação à norma-padrão, tratando as variedades como legítimas.'
+    },
+    {
+      id: 'PORT_HAVIAM',
+      severity: 'soft',
+      category: 'Gramatical',
+      pattern: '\\bhaviam\\s+(muit[oa]s|vari[oa]s|pouc[oa]s|alguns|algumas|alunos|pessoas|problemas)',
+      unless: 'exemplo de (erro|desvio)|nao se diz|forma incorret|incorretamente|\\bincorret[oa]\\b',
+      problem: '"Haviam" com sentido de existir foge à norma-padrão: o verbo haver impessoal fica no singular ("havia muitos alunos").',
+      fix: 'Usar "havia" no sentido de existir; "haviam" só vale como auxiliar de tempo composto ("haviam chegado").'
     }
   ],
   educacao: [RULE_DECRETO_10502],

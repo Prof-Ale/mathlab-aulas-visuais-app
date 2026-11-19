@@ -141,6 +141,8 @@ const NATURE_RELATION_NOTES = Object.freeze({
   'normativo+teorico': 'Distinguir texto normativo de literatura acadêmica e verificar a vigência da norma.',
   'historico+teorico': 'Situar cada conceito em seu contexto histórico e evitar anacronismo.',
   'filosofico+historico': 'Distinguir o argumento do filósofo do contexto histórico em que foi formulado.',
+  'historico+teologico': 'Distinguir o dado histórico, a tradição interpretativa e a afirmação de fé.',
+  'filosofico+teologico': 'Distinguir o argumento filosófico da doutrina confessional e atribuir cada posição a quem a sustenta.',
   'baseado_evidencias+empirico': 'Indicar o desenho de pesquisa e os limites de generalização das evidências.'
 });
 
@@ -164,7 +166,7 @@ function detectAudience(rawText, gradeLevel) {
   return 'Não especificado';
 }
 
-const RESEARCH_NATURES = new Set(['teorico', 'filosofico', 'historico', 'normativo', 'baseado_evidencias', 'profissional']);
+const RESEARCH_NATURES = new Set(['teorico', 'filosofico', 'historico', 'teologico', 'normativo', 'baseado_evidencias', 'profissional']);
 
 /**
  * Monta o contexto completo. area vem de classifyArea (chamada antes pelo interpretador).

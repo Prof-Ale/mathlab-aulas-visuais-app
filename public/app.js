@@ -840,7 +840,7 @@ async function renderAvatarPanel() {
     const chosen = state.avatars.find((a) => a.id === choice.id);
     box.innerHTML = `<fieldset class="card ctx-panel" style="border:1px solid var(--ml-border);">
       <legend><strong>Professor Alê Chocolate na capa</strong></legend>
-      <label class="check-row" for="chkAvatar"><input id="chkAvatar" type="checkbox" ${choice.enabled ? 'checked' : ''} /> <span>Incluir o avatar na capa (vale para HTML e DOCX)</span></label>
+      <label class="check-row" for="chkAvatar"><input id="chkAvatar" type="checkbox" ${choice.enabled ? 'checked' : ''} /> <span>Incluir o avatar na capa (vale para HTML, DOCX e PPTX)</span></label>
       <p class="muted" style="margin:6px 0;">Sugestão: ${esc(sug.reason)} O app usa só a imagem do catálogo, sem redesenhar rosto nem logotipo.</p>
       <div class="chip-row" role="radiogroup" aria-label="Escolher a pose do avatar">
         ${state.avatars.map((a) => `<label class="chip" style="display:flex;flex-direction:column;align-items:center;gap:4px;border-radius:12px;${a.id === choice.id ? 'outline:3px solid var(--ml-gold);' : ''}">
@@ -849,7 +849,7 @@ async function renderAvatarPanel() {
         </label>`).join('')}
       </div>
       ${chosen?.note ? `<p class="muted" style="margin:6px 0;">Observação: ${esc(chosen.note)}</p>` : ''}
-      <p class="muted" style="margin:6px 0;">Antes de publicar, confira rosto, logotipo e mãos (checklist da seção 8 do manual). PPTX, Markdown e SVG ainda não recebem avatar.</p>
+      <p class="muted" style="margin:6px 0;">Antes de publicar, confira rosto, logotipo e mãos (checklist da seção 8 do manual). Markdown e SVG não recebem avatar.</p>
     </fieldset>`;
     box.querySelector('#chkAvatar').addEventListener('change', (e) => { state.avatarChoice.enabled = e.target.checked; });
     box.querySelectorAll('input[name="avatarPose"]').forEach((r) => r.addEventListener('change', (e) => { state.avatarChoice.id = e.target.value; renderAvatarPanel(); }));
@@ -1108,7 +1108,7 @@ document.querySelectorAll('[data-export-fmt]').forEach((btn) => {
           material: state.currentMaterial,
           format: fmt,
           baseFilename: 'aula_mathlab',
-          avatarId: state.avatarChoice.enabled && ['html', 'docx'].includes(fmt) ? state.avatarChoice.id : null
+          avatarId: state.avatarChoice.enabled && ['html', 'docx', 'pptx'].includes(fmt) ? state.avatarChoice.id : null
         })
       });
       document.getElementById('exportResultBox').innerHTML = `

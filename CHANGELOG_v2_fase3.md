@@ -21,5 +21,7 @@ Dados persistidos (`data/projects.json`) não foram tocados. Pré-requisito: Fas
 Antes: violações críticas e sérias em Pesquisa, rótulos ausentes, sem aria-current, sem pular conteúdo.
 Depois: 0 violações axe nas 8 telas, desktop e celular, sem rolagem horizontal e sem erros de JS. Restam como alvo menor que 36 px apenas as caixas de seleção (24 px, com área clicável de 40 px pelo rótulo).
 
+Limite desta evidência: o axe-core detecta só parte dos problemas de acessibilidade. "0 violações" não comprova conformidade com a WCAG. Ainda não foram feitos teste com leitor de tela, navegação completa só pelo teclado e zoom de 200% e 400%.
+
 ## Testes
 Suíte completa passando (ver execução). Materiais salvos antes da Fase 3 não têm contexto guardado; o app avisa e pede para gerar de novo.

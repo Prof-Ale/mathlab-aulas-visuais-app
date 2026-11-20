@@ -1,6 +1,6 @@
 {
   "name": "mathlab-aulas-visuais",
-  "version": "1.0.0",
+  "version": "2.0.0-fase.6",
   "description": "MathLab Aulas Visuais - Ambiente inteligente de autoria docente, pesquisa científica, engenharia didática, produção visual e exportação.",
   "type": "module",
   "main": "server.js",

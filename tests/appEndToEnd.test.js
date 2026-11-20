@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import os from 'node:os';
 import path from 'node:path';
 import fs from 'node:fs/promises';
+import fsSync from 'node:fs';
 import { Readable } from 'node:stream';
 
 import { loadKnowledgeInventory } from '../src/knowledge/knowledgeBase.js';
@@ -40,9 +41,17 @@ function invokeHandler(handler, { method = 'GET', url = '/', body = null } = {})
   });
 }
 
-test('1. Fase Zero: recupera inventário real M01-M05 e registra conflitos sem auto-promover', async () => {
-  const docsRoot = path.resolve(process.cwd(), '..');
-  const inv = await loadKnowledgeInventory(docsRoot);
+// Os documentos M01 a M05 ficam na pasta de documentos do professor, fora deste repositório.
+// Caminho padrão: a pasta acima. Outro caminho: variável MATHLAB_DOCS_ROOT.
+const DOCS_ROOT = process.env.MATHLAB_DOCS_ROOT
+  ? path.resolve(process.env.MATHLAB_DOCS_ROOT)
+  : path.resolve(process.cwd(), '..');
+const DOCS_PRESENTES = fsSync.existsSync(path.join(DOCS_ROOT, '01_base_cientifica_v2.3.3_CANDIDATA_REV6.md'));
+
+test('1. Fase Zero: recupera inventário real M01-M05 e registra conflitos sem auto-promover', {
+  skip: DOCS_PRESENTES ? false : 'documentos M01-M05 não encontrados (defina MATHLAB_DOCS_ROOT com a pasta que os contém)'
+}, async () => {
+  const inv = await loadKnowledgeInventory(DOCS_ROOT);
   assert.equal(inv.totalCatalogEntries, 10);
   assert.equal(inv.availableCount, 10);
   assert.ok(inv.pendingVersionDecisions.length >= 3);
